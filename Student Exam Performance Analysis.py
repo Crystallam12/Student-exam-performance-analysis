@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dataframe = pd.read_csv('StudentsPerformance.csv')
+dataframe = pd.read_csv('data/StudentsPerformance.csv')
 SAMPLESIZE = len(dataframe) #there are 1000 datapoints, SAMPLESIZE = 1000
 #explore/preview data
 print(dataframe.head())
@@ -54,6 +54,7 @@ plt.ylabel("Probability Density of Students")
 plt.title("Distribution of Overall Student Exam Scores")
 plt.legend()
 plt.tight_layout()
+plt.savefig('figures/fig1_overall_distribution.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
 
 
@@ -103,6 +104,7 @@ plt.xlabel('Overall Exam Score')
 plt.ylabel('Probability Density of Students')
 plt.title("Overall Exam Score Distribution for Female and Male Students")
 plt.legend()
+plt.savefig('figures/fig2_gender_score_distribution.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
 
 
@@ -143,6 +145,7 @@ plt.xlabel("Subject Exams Scores")
 plt.xticks(s, subjects)
 plt.legend()
 plt.tight_layout()
+plt.savefig('figures/fig3_preparation_distribution.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
 
 
@@ -159,6 +162,7 @@ plt.plot(x_read, x_read*m + b, '--', color = 'red', label = "Linear Regression")
 #linear regression line used to quantify the correlation between reading and writing scores
 plt.legend()
 plt.tight_layout()
+plt.savefig('figures/fig4_reading_writing_correlation.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
 corr = x_read.corr(y_write)
 print(corr)
@@ -213,6 +217,7 @@ plt.legend(
     title_fontsize = 8
 )
 plt.tight_layout()
+plt.savefig('figures/fig5_parent_education_ distribution.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
 
 
