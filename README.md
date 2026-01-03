@@ -1,11 +1,18 @@
-# Dataset
-The dataset was sourced from Kaggle and contains exam scores for 1000 students including math, reading, and writing 
-scores, along with gender, parent education level, and test preparation completion variables.
-# Methodology
-An overall performance score was calculated for each student as the average of their math, reading, and writing exam 
+# Student Exam Performance Data Analysis
+## Project Overview
+This project analyzes student exam performance data to explore the relation between academic performance to demographics
+and educational factors. Using Python based exploratory data analysis techniques, this analysis explores score 
+distributions, subject relationships, and the impact of gender, parental education, and test preparation on overall
+student performance.
+
+## Dataset
+The dataset was sourced from Kaggle and contains math, reading, and writing exam scores for 1000 students, along with 
+gender, parent education level, and test preparation completion variables.
+## Methodology
+An **Overall Score** was calculated for each student as the average of their math, reading, and writing exam 
 scores. This metric was used to analyze the overall score distribution, and to identify how gender, parental education,
 and test preparation relate to overall academic performance.
-# Visualizations
+## Visualizations
 ### Figure 1: Distribution of Overall Student Exam Scores.
 ![Figure1](figures/fig1_overall_distribution.png)
 **Caption:**
@@ -18,15 +25,27 @@ have a slightly higher average at 69.57 compared to the average male score at 65
 ### Figure 3: Impact of Test Preparation on Average Exam Scores for Each Subject.
 ![Figure3](figures/fig3_preparation_distribution.png)
 **Caption:**
-Students who completed the test preparation achieved higher average score across all subjects compared to students that
-did not complete any test preparations.
+Students who completed the test preparation achieved higher average score across all subjects compared to students who
+did not complete the test preparation.
 ### Figure 4: Relationship between Reading and Writing Scores
 ![Figure4](figures/fig4_reading_writing_correlation.png)
 **Caption:**
 Reading and writing scores show a strong positive relationship with a correlation of 0.9546, indicating that students 
-tend to perform well in either reading or writing will perform similarly in the other.
+who perform well in reading tend to perform similarly in writing.
 ### Figure 5: Parent Education Distribution Among Top and Bottom Quartiles of Student Performance
 ![Figure5](figures/fig5_parent_education_distribution.png)
 **Caption:**
 Students in the top performance quartile are more likely to have parents with higher education such as a bachelor's 
-degree or a master's degree compared to more students in the bottom performance quartile.
+degree or a master's degree compared to students in the bottom performance quartile.
+## Key Takeaways
+- Overall student performance follows an approximately normal distribution with most students scoring near the mean score.
+- Performance distributions of both female and male students follow a similar approximately normal distribution, with female students achieving a slightly higher average than males.
+- Completion of the test preparation is associated with higher scores across all subjects.
+- Higher parental education levels are more prevalent in the students of the top performing quartile, highlighting a potential influence of educational support from parents on academic outcomes.
+## Tools Used
+- Python
+- Pandas
+- Matplotlib
+- Numpy
+- Scipy.stats
+- Math
