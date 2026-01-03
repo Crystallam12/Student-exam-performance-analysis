@@ -102,7 +102,7 @@ plt.plot(
 plt.xticks(np.arange(0,101, 10))
 plt.xlabel('Overall Exam Score')
 plt.ylabel('Probability Density of Students')
-plt.title("Overall Exam Score Distribution for Female and Male Students")
+plt.title("Overall Exam Score Distribution Between Female and Male Students")
 plt.legend()
 plt.savefig('figures/fig2_gender_score_distribution.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
@@ -217,7 +217,7 @@ plt.legend(
     title_fontsize = 8
 )
 plt.tight_layout()
-plt.savefig('figures/fig5_parent_education_ distribution.png', dpi = 300, bbox_inches = 'tight')
+plt.savefig('figures/fig5_parent_education_distribution.png', dpi = 300, bbox_inches = 'tight')
 plt.show()
 
 
